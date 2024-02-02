@@ -1,101 +1,159 @@
-.special-bubble {
-    position: absolute;
-    z-index: 8;
-    /* background-color: var(--clr); */
-    background-color: red;
-    bottom: 0;
-    border-radius: 50%;
-    filter: blur(5px);
-    animation: bubbleFloat 10s ease-in-out infinite;
-}
-
-/* 气泡上浮 */
-@keyframes bubbleFloat {
-    0% {
-        bottom: 0;
-    }
-
-    100% {
-        bottom: calc(100% - 240px);
-    }
-}
-
-.special-bubble:nth-child(1) {
+.special-bubble:nth-of-type(1) {
     width: 20px;
     height: 20px;
-    left: 45%;
+    left: 35%;
     animation-duration: 6s;
-    animation-delay: 1.2s;
+    animation-delay: 0.5s;
 }
 
-/* .special-bubble:nth-child(2) {
-    width: 22px;
-    height: 22px;
-    left: 60%;
-    animation-duration: 10s;
+.special-bubble:nth-of-type(2) {
+    width: 24px;
+    height: 24px;
+    left: 45%;
+    animation-duration: 8s;
     animation-delay: 0s;
 }
 
-.special-bubble:nth-child(3) {
-    width: 18px;
-    height: 18px;
-    left: 50%;
-    animation-duration: 6s;
-    animation-delay: 0;
-}
-
-.special-bubble:nth-child(4) {
+.special-bubble:nth-of-type(3) {
     width: 20px;
     height: 20px;
-    left: 65%;
+    left: 36%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.special-bubble:nth-of-type(4) {
+    width: 24px;
+    height: 24px;
+    left: 52%;
+    animation-duration: 6s;
+    animation-delay: 3.2s;
+}
+
+.special-bubble:nth-of-type(5) {
+    width: 20px;
+    height: 20px;
+    left: 58%;
+    animation-duration: 6s;
+    animation-delay: 4s;
+}
+
+.special-bubble:nth-of-type(6) {
+    width: 20px;
+    height: 20px;
+    left: 62%;
+    animation-duration: 6s;
+    animation-delay: 3.5s;
+}
+
+.special-bubble:nth-of-type(7) {
+    width: 22px;
+    height: 22px;
+    left: 50%;
+    animation-duration: 6s;
+    animation-delay: 2.5s;
+}
+
+.special-bubble:nth-of-type(8) {
+    width: 28px;
+    height: 28px;
+    left: 50%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.special-bubble:nth-of-type(9) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 8s;
+    animation-delay: 0.8s;
+}
+
+.special-bubble:nth-of-type(10) {
+    width: 20px;
+    height: 20px;
+    left: 40%;
+    animation-duration: 8s;
+    animation-delay: 4.2s;
+}
+
+.special-bubble:nth-of-type(11) {
+    width: 26px;
+    height: 26px;
+    left: 48%;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+
+.special-bubble:nth-of-type(12) {
+    width: 20px;
+    height: 20px;
+    left: 60%;
+    animation-duration: 8s;
+    animation-delay: 2.8s;
+}
+
+.special-bubble:nth-of-type(13) {
+    width: 24px;
+    height: 24px;
+    left: 55%;
+    animation-duration: 8s;
+    animation-delay: 1.6s;
+}
+
+.special-bubble:nth-of-type(14) {
+    width: 22px;
+    height: 22px;
+    left: 45%;
+    animation-duration: 6s;
+    animation-delay: 2.1s;
+}
+
+.special-bubble:nth-of-type(15) {
+    width: 18px;
+    height: 18px;
+    left: 61%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.special-bubble:nth-of-type(16) {
+    width: 24px;
+    height: 24px;
+    left: 39%;
+    animation-duration: 8s;
+    animation-delay: 2.5s;
+}
+
+.special-bubble:nth-of-type(17) {
+    width: 22px;
+    height: 22px;
+    left: 55%;
     animation-duration: 8s;
     animation-delay: 3s;
 }
 
-.special-bubble:nth-child(5) {
-    width: 18px;
-    height: 18px;
+.special-bubble:nth-of-type(18) {
+    width: 20px;
+    height: 20px;
     left: 36%;
     animation-duration: 7s;
-    animation-delay: 3s;
+    animation-delay: 3.5s;
 }
 
-.special-bubble:nth-child(6) {
-    width: 20px;
-    height: 20px;
-    left: 65%;
-    animation-duration: 6s;
-    animation-delay: 2s;
+.special-bubble:nth-of-type(19) {
+    width: 28px;
+    height: 28px;
+    left: 57%;
+    animation-duration: 7s;
+    animation-delay: 3.8s;
 }
 
-.special-bubble:nth-child(7) {
-    width: 22px;
-    height: 22px;
-    left: 50%;
-    animation-duration: 8s;
-    animation-delay: 2.4 s;
-}
-
-.special-bubble:nth-child(8) {
-    width: 22px;
-    height: 22px;
-    left: 50%;
-    animation-duration: 6s;
-    animation-delay: 1.2s;
-}
-
-.special-bubble:nth-child(9) {
-    width: 20px;
-    height: 20px;
-    left: 48%;
-    animation-duration: 5s;
-    animation-delay: 2s;
-}
-
-.special-bubble:nth-child(10) {
+.special-bubble:nth-of-type(20) {
     width: 24px;
     height: 24px;
     left: 48%;
-    animation-duration: 8s;
-    animation-delay: 3s;
-} */
+    animation-duration: 6s;
+    animation-delay: 4s;
+}
