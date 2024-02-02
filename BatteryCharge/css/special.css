@@ -1,1 +1,123 @@
-.battery-charge-right {}
+.battery-charge-special {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+    filter: contrast(15);
+    animation: hueRotate 5s linear infinite;
+}
+
+.special-number {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+    position: absolute;
+    z-index: 10;
+    font-size: 30px;
+}
+
+.special-circle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    filter: blur(8px);
+    animation: circleRotate 5s linear infinite;
+    z-index: 9;
+}
+
+.special-circle::before {
+    width: 200px;
+    height: 200px;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background-color: var(--clr);
+    border-radius: 42% 37% 62% 48% / 45%;
+}
+
+.special-circle::after {
+    width: 172px;
+    height: 174px;
+    content: '';
+    position: absolute;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.special-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    filter: blur(8px);
+    border-radius: 150px 150px 0 0;
+    background-color: var(--clr);
+}
+
+.special-bubble {
+    position: absolute;
+    z-index: 8;
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    filter: blur(5px);
+    animation: bubbleFloat 10s ease-in-out infinite;
+
+}
+
+/* 颜色变化 */
+@keyframes hueRotate {
+    0% {
+        filter: contrast(15) hue-rotate(0);
+    }
+
+    100% {
+        filter: contrast(15) hue-rotate(360deg);
+    }
+}
+
+/* 面板旋转 */
+@keyframes circleRotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 气泡上浮 */
+@keyframes bubbleFloat {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: calc(100% - 255px);
+    }
+}
