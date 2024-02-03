@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.glowing-wrap {
+    background-color: #000;
+}
+
+.glowing-content {
+    display: flex;
+}
+
+.glowing-content-box {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
