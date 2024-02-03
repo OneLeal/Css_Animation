@@ -1,0 +1,61 @@
+.breathing-light {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.breathing-light span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.breathing-red {
+    animation: breathingRed 3s ease-in-out infinite alternate;
+}
+
+.breathing-green {
+    animation: breathingGreen 3s ease-in-out infinite alternate;
+}
+
+.breathing-blue {
+    animation: breathingBlue 3s ease-in-out infinite alternate;
+}
+
+@keyframes breathingRed {
+    0% {
+        border: 5px solid rgba(255, 0, 0, 0.15);
+        box-shadow: 0 0 0 rgba(255, 0, 0, 0), 0 0 0 rgba(255, 0, 0, 0) inset;
+    }
+
+    100% {
+        border: 5px solid rgba(255, 0, 0, 1);
+        box-shadow: 0 0 70px rgba(255, 0, 0, 0.7), 0 0 15px rgba(255, 0, 0, 0.5) inset;
+    }
+}
+
+@keyframes breathingGreen {
+    0% {
+        border: 5px solid rgba(0, 255, 0, 0.15);
+        box-shadow: 0 0 0 rgba(0, 255, 0, 0), 0 0 0 rgba(0, 255, 0, 0) inset;
+    }
+
+    100% {
+        border: 5px solid rgba(0, 255, 0, 1);
+        box-shadow: 0 0 70px rgba(0, 255, 0, 0.7), 0 0 15px rgba(0, 255, 0, 0.5) inset;
+    }
+}
+
+@keyframes breathingBlue {
+    0% {
+        border: 5px solid rgba(0, 0, 255, 0.15);
+        box-shadow: 0 0 0 rgba(0, 0, 255, 0), 0 0 0 rgba(0, 0, 255, 0) inset;
+    }
+
+    100% {
+        border: 5px solid rgba(0, 0, 255, 1);
+        box-shadow: 0 0 70px rgba(0, 0, 255, 0.7), 0 0 15px rgba(0, 0, 255, 0.5) inset;
+    }
+}

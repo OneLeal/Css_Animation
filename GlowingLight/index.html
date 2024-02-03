@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/glowing.css">
     <link rel="stylesheet" href="css/breathing.css">
+    <link rel="stylesheet" href="css/loading.css">
 </head>
 
 <body>
@@ -25,8 +26,18 @@
             </div>
         </div>
 
-        <!-- 呼吸灯 -->
-        <div class="breathing-light"></div>
+        <!-- 呼吸灯 & Loading -->
+        <div class="glowing-content">
+            <!-- 呼吸灯 -->
+            <div class="breathing-light">
+                <span class="breathing-red"></span>
+                <span class="breathing-green"></span>
+                <span class="breathing-blue"></span>
+            </div>
+
+            <!-- TODO: Loading 特效 -->
+            <div class="loading-box"></div>
+        </div>
     </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
