@@ -5,10 +5,10 @@
 3. 流水灯 WaterfallLight
 4. 光圈泡泡 BubbleAureole
 5. 夜光灯特效 GlowingLight
+6. 全屏泡泡 BubbleFloat
 
 ### TODO
 
-6. 全屏泡泡 BubbleFloat
 7. 全屏粒子特效 Particle
 8. 下雨 Rain
 9. 拟态按钮 MimesisButton
