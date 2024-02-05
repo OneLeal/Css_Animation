@@ -19,3 +19,4 @@
 14. 桌面浮动 DesktopFloat
 15. 详情页交互 DetailInteraction
 16. 盒子加载特效 BoxLoading
+17. 星星加载特效 StarLoading
