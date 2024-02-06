@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131a1c;
+}
+
+.star-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation: changeColor 7s linear infinite;
+}
+
+.star-wrap span {
+    position: absolute;
+    transform-origin: 150px;
+    transform: translateX(-150px) rotate(calc(var(--i) * 30deg));
+    filter: drop-shadow(0 0 5px #3cc2ff) drop-shadow(0 0 15px #3cc2ff) drop-shadow(0 0 30px #3cc2ff);
+}
+
+.star-wrap span::before {
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 0.75rem;
+    color: #131a1c;
+    animation: starsParticle 2.4s linear infinite;
+    animation-delay: calc(var(--i) * -0.2s);
+}
+
+.star-wrap span i {
+    position: relative;
+    color: #3cc2ff;
+    animation: starsRotate 2.4s linear infinite;
+    animation-delay: calc(var(--i) * -0.2s);
+}
+
+@keyframes starsRotate {
+    0% {
+        transform: rotate(0deg) scale(0);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(3);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(0);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        filter: hue-rotate(0);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes starsParticle {
+    0% {
+        scale: 1;
+        opacity: 0;
+        rotate: 0;
+    }
+
+    50% {
+        scale: 1;
+        opacity: 1;
+        rotate: 180deg;
+    }
+
+    100% {
+        scale: 0;
+        opacity: 0;
+        rotate: 360deg;
+        filter: drop-shadow(150px 0 #3cc2ff) drop-shadow(-150px 0 #3cc2ff) drop-shadow(0 150px #3cc2ff) drop-shadow(0 -150px #3cc2ff);
+    }
+}
