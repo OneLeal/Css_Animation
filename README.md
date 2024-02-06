@@ -8,15 +8,14 @@
 6. 全屏泡泡 BubbleFloat
 7. 全屏粒子特效 ParticleBackground
 8. 星星加载特效 StarLoading
+9. 下雨 Rain
 
 ### TODO
 
-8. 下雨 Rain
-9. 拟态按钮 MimesisButton
-10. 流光按钮 StreamerButton
-11. 果冻泡泡 BubbleJelly
-12. 毛玻璃界面 FrostedGlassInterface
-13. 毛玻璃菜单 FrostedGlassMenu
-14. 桌面浮动 DesktopFloat
-15. 详情页交互 DetailInteraction
-16. 盒子加载特效 BoxLoading
+- 拟态按钮 MimesisButton
+- 流光按钮 StreamerButton
+- 果冻泡泡 BubbleJelly
+- 毛玻璃界面 FrostedGlassInterface
+- 毛玻璃菜单 FrostedGlassMenu
+- 详情页交互 DetailInteraction
+- 盒子加载特效 BoxLoading
